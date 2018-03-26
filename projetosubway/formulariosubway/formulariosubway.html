@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+    <title>Contato</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+  <body>
+   <script type="text/javascript">
+    /*Validação de Campos*/
+    function Verifica () {
+    var NOME = document.getElementById('Cad').pnome.value;
+    var CIDADE = document.getElementById('Cad').pcidade.value;
+    var EMAIL = document.getElementById('Cad').pemail.value;
+    var ASSUNTO = document.getElementById('Cad').passunto.value;
+    if (NOME == '' || CIDADE == '' || EMAIL == '' || ASSUNTO == '') {
+      alert ('Todos os campos devem estar preenchidos.');
+      return false;
+    } 
+    }
+
+    </script>
+
+<style> 
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+input[type=submit] {
+    background-color: #e2da1b;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #78ce76;
+    padding: 60px;
+}
+
+</style>
+
+<div class="container">
+  <form id="Cad" onsubmit="return Verifica()" action=>
+
+    <label for="pnome">Primeiro nome:</label>
+    <input type="text" id="pnome" name="firstname" placeholder="Seu nome..">
+
+    <label for="snome">Sobrenome:</label>
+    <input type="text" id="snome" name="lastname" placeholder="Seu sobrenome..">
+    
+    Cidade:
+    </label>
+    <input type="text" id="pcidade" size="25" placeholder="Sua cidade..." />
+    <br/>
+
+    <label for="pestado" title="Informe o Estado">
+    Estado:
+    </label>
+    <select id="pestado" size="1">
+    <option value="AC"> AC </option>
+    <option value="AL"> AL </option>
+    <option value="AM"> AM </option>
+    <option value="AP"> AP </option>
+    <option value="BA"> BA </option>
+    <option value="CE"> CE </option>
+    <option value="DF"> DF </option>
+    <option value="ES"> ES </option>
+    <option value="GO"> GO </option>  
+    <option value="MA"> MA </option>
+    <option value="MG"> MG </option>
+    <option value="MS"> MS </option>
+    <option value="PA"> PA </option>
+    <option value="PB"> PB </option>
+    <option value="PE"> PE </option>
+    <option value="PI"> PI </option>
+    <option value="PR"> PR </option>
+    <option value="RJ"> RJ </option>
+    <option value="RN"> RN </option>
+    <option value="RR"> RR </option>
+    <option value="RS"> RS </option>
+    <option value="SC"> SC </option>
+    <option value="SE"> SE </option>
+    <option value="SP"> SP </option>
+    <option value="TO"> TO </option>
+    </select>
+    <br/>
+    
+    <label for="pemail" title="Informe o e-mail">
+    E-mail:
+    </label>
+    <input type="text" id="pemail" size="25" placeholder="Seu e-mail.."/> 
+    <br/>
+
+    <label for="passunto" title="Informe o assunto">
+     Assunto:
+    </label>
+    <input type="text" id="passunto" size="25" placeholder="Ex: Recomendações.."/> 
+    <br/>
+
+    <label for="subject">Texto:</label>
+    <textarea id="subject" name="subject" placeholder="Escreva aqui..." style="height:200px"></textarea>
+
+    <input type="submit" value="Enviar">
+    
+
+    </form>
+  </div>
+ </body>
+</html> 

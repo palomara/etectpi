@@ -1,0 +1,279 @@
+*{margin: 0; padding: 0;} /*zero todas configurações pre definida do html para 0*/
+
+body{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+}
+nav{
+	background-color: #008952;
+}
+/* Configuração do MENU */
+.menu{
+	list-style: none;
+	background-color: #008952;
+	overflow: hidden;
+}
+.menu li{
+	position: relative;
+	float: left;
+}
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: block;
+}
+.menu li a:hover{
+	color: #ffc107;
+	text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li:hover{
+	display: block;
+}
+.menu li ul li{
+	border: 1px solid #c0c0c0;
+	display: block;
+	width: 150px
+}
+.menu-color{
+	-padding: 5px;
+	-width: 100%
+	-background: #ffc107;
+}
+.active{
+	background-color: #4CAF50;
+}
+/* Fim configuração do MENU */
+.logo img{
+	padding-top: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100px;
+	float: left;
+}
+.bt-loga{
+	float: right;
+	padding: 10px 30px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: none;
+}
+.slide{
+	padding: 200px;
+	background: linear-gradient(-90deg, #fec016, #fce424);
+}
+.slide2{
+	padding: 200px;
+	background: linear-gradient(-90deg, #542341, #381b2d);
+}
+.slide3{
+	padding: 200px;
+	background: linear-gradient(-90deg, #572b31, #3a2427);
+}
+.fixa{
+  z-index: 10;
+  position: absolute;
+}
+.fixa img {
+	padding-top: 30px;
+	padding-left: 20%;
+}
+.text{
+	padding-top: 80px;
+	padding-left: 60%;
+}
+.fixa p{
+	padding-bottom: 5px;
+	color: #EFA52C;
+    letter-spacing: 4px;
+    font-size: 0.9em;
+}
+.fixa h1{
+	color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+}
+.fixa h4{
+	font-size: 2.3em;
+    font-weight: 400;
+    color: #EFA52C;
+    margin: 0;
+}
+.bt{
+	padding: 15px 35px;
+   
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: none;
+}
+
+.red{
+	 background: #f44336;
+}
+
+.content {
+	background: #fff;
+	padding: 0;
+	margin: 15px;
+	padding: 15px;
+}
+
+.img-promocao{
+	width: 100%;
+}
+.text-promocao{
+	width: 100%;
+	padding: 0;
+	margin: 5px;
+	padding: 5px;
+}
+.text-promocao h2 {
+    font-family: 'Roboto Slab';
+    font-weight: normal;
+    font-size: 24px;
+    color: #222222;
+}
+.text-promocao h3 {
+    font-family: 'Roboto Slab';
+    font-weight: normal;
+    font-size: 22px;
+    color: #222222;
+    text-align: center;
+}
+
+.page {
+	max-width: 100%;
+	padding: 15px;
+	background: #eae3e3;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+.cols {
+	float: left;
+}
+.cols-12 {
+	width: 8.33%;
+}
+.cols-12-5x {
+	width: 41.65%;
+}
+.cols-6 {
+	width: 16.66%;
+}
+
+.cols-6-3x {
+	width: 50%;
+}
+.cols-6-5x {
+	width: 83.3%;
+}
+
+.cols-3 {
+	width: 33.33%;
+}
+.cols-3-2x {
+	width: 66.64%;
+}
+.rodape {
+text-align: center;
+background-color: #008952;
+color: white;
+size: 12px;
+padding: 12px;
+background: linear-gradient(-90deg, #008952, #fce424);
+}
+fieldset {
+padding:2px;
+border: 2px solid #008952;	
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: #e2da1b;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}*/
+
+.text-logo p{
+	padding-bottom: 5px;
+	color: #EFA52C;
+    font-size: 14px;
+}
+.text-logo h1{
+	font-size: 2.0em;
+    font-weight: 400;
+    color: #EFA52C;
+    margin: 0;
+}

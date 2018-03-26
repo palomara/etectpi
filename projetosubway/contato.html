@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" content="text/html" http-equiv="Content-Type">
+	<meta http-equiv="-refresh" content="1">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<title>Site subway</title>
+	<script src="js/script.js" ></script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img  src="img/logo.png">
+		</div>
+		<ul class="menu">
+			<li><a class="active" href="index.html">HOME</a></li>
+			<li><a href="historia.html">QUEM SOMOS</a></li>
+			<li><a href="lanches.html">LANCHES</a></li>
+			<li><a href="contato.html">CONTATO</a></li>
+		</ul>
+	</nav>
+	<div class="page clearfix">
+		<div class="cols cols-6" >
+			<div class="content" style="background: #eae3e3;">
+			</div>
+		</div>
+		 <div class="cols cols-3-2x">
+		    <div class="content">
+		    	<div class="content">
+				<h3 style="color: #545454; font-family: 'SixInch', Arial, Helvetica"> <fieldset>
+					Se você quiser contar a sua experiência ou precisar de ajuda para um dos nossos programas, estamos aqui para ajudar. Talvez a sua pergunta já esteja respondida na nossa seção de perguntas frequentes. Se não, informações de contato e opções para os nossos muitos programas estão disponíveis abaixo. </fieldset>
+				</h3>
+			</div>
+		    	<form id="Cad" onsubmit="return Verifica()" action=>
+				    <label for="pnome">Primeiro nome:</label>
+				    <input type="text" id="pnome" name="firstname" placeholder="Seu nome..">
+
+				    <label for="snome">Sobrenome:</label>
+				    <input type="text" id="snome" name="lastname" placeholder="Seu sobrenome..">
+				    
+				    Cidade:
+				    </label>
+				    <input type="text" id="pcidade" size="25" placeholder="Sua cidade..." />
+				    <br/>
+
+				    <label for="pestado" title="Informe o Estado">
+				    Estado:
+				    </label>
+				    <select id="pestado" size="1">
+				    <option value="AC"> AC </option>
+				    <option value="AL"> AL </option>
+				    <option value="AM"> AM </option>
+				    <option value="AP"> AP </option>
+				    <option value="BA"> BA </option>
+				    <option value="CE"> CE </option>
+				    <option value="DF"> DF </option>
+				    <option value="ES"> ES </option>
+				    <option value="GO"> GO </option>  
+				    <option value="MA"> MA </option>
+				    <option value="MG"> MG </option>
+				    <option value="MS"> MS </option>
+				    <option value="PA"> PA </option>
+				    <option value="PB"> PB </option>
+				    <option value="PE"> PE </option>
+				    <option value="PI"> PI </option>
+				    <option value="PR"> PR </option>
+				    <option value="RJ"> RJ </option>
+				    <option value="RN"> RN </option>
+				    <option value="RR"> RR </option>
+				    <option value="RS"> RS </option>
+				    <option value="SC"> SC </option>
+				    <option value="SE"> SE </option>
+				    <option value="SP"> SP </option>
+				    <option value="TO"> TO </option>
+				    </select>
+				    <br/>
+				    
+				    <label for="pemail" title="Informe o e-mail">
+				    E-mail:
+				    </label>
+				    <input type="text" id="pemail" size="25" placeholder="Seu e-mail.."/> 
+				    <br/>
+
+				    <label for="passunto" title="Informe o assunto">
+				     Assunto:
+				    </label>
+				    <input type="text" id="passunto" size="25" placeholder="Ex: Recomendações.."/> 
+				    <br/>
+
+				    <label for="subject">Texto:</label>
+				    <textarea id="subject" name="subject" placeholder="Escreva aqui..." style="height:200px"></textarea>
+
+				    <input type="submit" value="Enviar">
+				</form>
+		    </div>
+		</div>
+		<div class="cols cols-6" >
+			<div class="content" style="background: #eae3e3;">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

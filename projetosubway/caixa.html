@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" content="text/html" http-equiv="Content-Type">
+	<meta http-equiv="-refresh" content="1">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<script src="js/script-caixa.js" ></script>
+	<title>Sistema de caixa subway</title>
+</head>
+<body onload="time()">
+	<nav>
+		<div class="logo">
+			<img  src="img/logo.png">
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" href="index.html">
+					<div id="data_hora"></div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="page clearfix">
+		
+		<div class="cols cols-3-2x">
+			    <div class="content">
+			    	<!-- LANCHES -->
+			    	<a href="#" onclick="mostrar_div(this);" id="mostra_div1" >
+						
+						    <button class="bt red">LANCHES</button>
+					    
+					</a>
+					<!--FIM LANCHES -->
+					<!-- BEBIDA -->
+			    	<a href="#" onclick="mostrar_div(this);" id="mostra_div2" >
+						
+					    	<button class="bt red">BEBIDAS</button>
+					  	
+					</a>
+					<!--FIM BEBIDA -->
+					<!-- ACOMPANHAMENTO -->
+			    	<a href="#" onclick="mostrar_div(this);" id="mostra_div3" >
+						
+					    	<button class="bt red">ACOMPANHAMENTOS</button>
+					  
+					</a>
+					<!--FIM ACOMPANHAMENTO -->
+					<!-- OTS -->
+			    	<a href="#" onclick="mostrar_div(this);" id="mostra_div4" >
+						
+					    	<button class="bt red">EXTRA</button>
+					  
+					</a>
+					<!--FIM OTS -->
+				</div>
+		</div>
+		
+
+<div class="cols cols-3-2x">
+	
+
+		<!-- BEBIDAS -->
+			<div name="calc" id="div_2" style="display:none;" >
+				<input type="" name="output" />
+
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\agua.jpg">
+			    		<div class="text-promocao">
+			    			<h3>Aguá R$ 2,00</h3>
+			    			<button type="button" name="agua" value="2,00" onclick="agua()">Adicionar ao pedido</button>
+			    		</div>
+			    	</div>
+			  	</div>
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\natural_one_brazil.jpg">
+			    		<div class="text-promocao">
+			    			<h3>Suco R$ 4,00</h3>
+			    			<button type="button" name="agua" value="4,00" onclick="suco()">Adicionar ao pedido</button>
+			    		</div>
+			    	</div>
+			  	</div>
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\drinks-extras-soda.jpg">
+			    		<div class="text-promocao">
+			    			<h3>Refrigerante R$ 5,00</h3>
+			    			<button type="button" name="agua" value="5,00" onclick="refri()">Adicionar ao pedido</button>
+			    		</div>
+			    	</div>
+			  	</div>
+			  	<div  class=" cols cols-3">
+			    	<div class="content">
+			    		<button class="bt" name="calc" value="=" onclick="valorlop()" >TOTAL A PAGAR:</button>
+			    	</div>
+			    </div>	
+	    	</div>
+
+	    <!-- FIM BEBIDAS-->	
+
+	    <!-- LANCHES -->
+			<div id="div_1" style="display:none;" >
+				<a href="#" onclick="adicionar()">
+				  	<div class="cols cols-3" >
+
+				    	<div class="content">
+				    		<img class="img-promocao" src="img\lanches\Carne E Queijo.jpg">
+				    		<div class="text-promocao">
+				    			<h3>Carne E Queijo R$ 10,50</h3>
+                             <input id="1" type="text">  </input>
+                             <button onclick="calcular('10,50', '5')" id="button1"> Gerar </button>
+				    		</div>
+				    	</div>
+				  	</div>
+			  </a>
+			  <a href="#" onclick="adicionar('subway club R$ 10,89')">
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\subway club.jpg">
+			    		<div class="text-promocao">
+			    			<h3>subway club R$ 10,89</h3>
+			    		</div>
+			    	</div>
+			  	</div>
+			  </a>
+			  <a href="#" onclick="adicionar('steak churrasco R$ 9,50')">
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\steak churrasco.jpg">
+			    		<div class="text-promocao">
+			    			<h3>steak churrasco R$ 9,50</h3>
+			    		</div>
+			    	</div>
+			  	</div>
+			  </a>
+			  <a href="#" onclick="adicionar('subway_melt R$ 9,99')">
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\subway_melt.jpg">
+			    		<div class="text-promocao">
+			    			<h3>subway_melt R$ 9,99</h3>
+			    		</div>
+			    	</div>
+			  	</div>
+			  </a>
+			  <a href="#" onclick="adicionar('atum R$ 8,90')">
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\atum.jpg">
+			    		<div class="text-promocao">
+			    			<h3>atum R$ 8,90</h3>
+			    		</div>
+			    	</div>
+			  	</div>
+			  </a>
+			  <a href="#" onclick="adicionar('peito de peru R$ 8,90')">
+			  	<div class="cols cols-3" >
+			    	<div class="content">
+			    		<img class="img-promocao" src="img\lanches\peito de peru.jpg">
+			    		<div class="text-promocao">
+			    			<h3>peito de peru R$ 8,90</h3>
+			    		</div>
+			    	</div>
+			  	</div>
+			  </a>
+	    	
+	    </div>
+	    <!-- FIM LANCHES -->
+
+	    	<div id="div_3" style="display:none;">
+			Conteúdo da aba 3
+			</div>
+			<div id="div_4" style="display:none;">
+			Conteúdo da aba 4
+			</div>	
+	    </div>
+	    <div id="div_teste" style="display:none;" class="cols cols-3">
+	    	<div class="content">
+	    			<pre id="demo"></pre>
+	    	</div>
+	    </div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" content="text/html" http-equiv="Content-Type">
+	<meta http-equiv="-refresh" content="1">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<title>Site subway</title>
+	<script src="js/script.js" ></script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img  src="img/logo.png">
+		</div>
+		<ul class="menu">
+			<li><a class="active" href="index.html">HOME</a></li>
+			<li><a href="historia.html">QUEM SOMOS</a></li>
+			<li><a href="lanches.html">LANCHES</a></li>
+			<li><a href="contato.html">CONTATO</a></li>
+		</ul>
+	</nav>
+	<div class="page clearfix">
+		<div class="cols cols-6" >
+			<div class="content" style="background: #eae3e3;"></div>
+		</div>
+		<div class="cols cols cols-3">
+			<div class="content">
+				<form style="border:1px solid #ccc" id="login">
+				  <div class="container">
+				    <label><b>LOGIN</b></label>
+				    <input type="text" placeholder="Login" id="username" name="username" required>
+
+				    <label><b>SENHA</b></label>
+				    <input type="password" placeholder="Digite senha" id="password" name="password" required>
+
+				    <div class="clearfix">
+				      <button type="button"  onclick="login();" class="signupbtn">Entrar</button>
+				    </div>
+				  </div>
+				</form>	
+			</div>
+		</div>
+		<div class="cols cols-3" >
+			<div class="content text-logo" >
+				<h1>Depois de logar siga os passo para fazer seu pedido</h1></br>
+				<fieldset ><legend > 1 Passo </legend>
+				<p>Ingresse seu CEP e encontre a filial mais prónxima de você</p>
+				</fieldset>
+				<fieldset ><legend > 2 Passo </legend>
+				<p>Escolha seu prato preferido do menu e monte seu pedido</p>
+				</fieldset>
+				<fieldset ><legend > 3 Passo </legend>
+				<p>O restaurante entrega o pedido na sua porta</p>
+				</fieldset>
+				<p>Não tem conta <a href="cadastro.html">CLICK AQUI PARA CRIAR</a></p>
+			</div>
+		</div>
+		<div class="cols cols-6" >
+			<div class="content" style="background: #eae3e3;"></div>
+		</div>
+	</div>
+	<div class="rodape"> 
+		<p> SUBWAY® é uma marca registrada da Subway IP Inc. </p> 
+	    <p> © 2017 Subway IP Inc.</p> 
+	    <p> Todos os direitos reservados.  </p>
+	</div>
+</body>
+</html>
