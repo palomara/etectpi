@@ -1,0 +1,46 @@
+<html>
+
+<head> 
+	<title> Cadastro </title> <!--Título da página -->
+	<link rel="stylesheet" href="css/estilo.css" type="text/css" /> <!-- Puxa o css na pasta-->
+	<meta charset="UTF-8">
+	<meta http-equiv="-refresh" content="1">
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script>
+		function openWinCadCliente() {
+    	window.open("cadastro_cliente.html");
+		}
+		function openWinCadFornecedor() {
+    	window.open("cadastro_fornecedor.html");
+		}
+		function openWinCadFuncionario() {
+    	window.open("cadastro_funcionario.html");
+		}
+		
+		
+	</script>
+
+</head>	
+
+<body>
+	<div class="wrapper"> <!--  o "contorno" -->
+		<div class="container"> 
+			<h1>Escolha o tipo de cadastro</h1>
+
+			<form class="form" id="link">
+			<select>
+			  <option value="cadastro_cliente.html" href="cadastro_cliente.html" target="_self">Cliente</option>
+			  <option value="cadastro_fornecedor.html" href "cadastro_fornecedor.html" target="_self">Fornecedor</option>
+			  <option value="cadastro_funcionario.htlm" href="cadastro_funcionario.html" target="_self">Funcionario</option>
+			</select>
+			<button type="submit" name="btn_cadastrar" onclick="openWinCadCliente()" onclick="openWinCadFornecedor()" onclick="openWinCadFuncionario()"value="submit" id="login-button" target="_self">Cadastrar</button>
+			</form>
+		</div>
+
+
+	</div>		
+		<script  src="js/action.js"></script> <!-- puxa o javascript --> 
+
+</body>
+
+</html>
